@@ -1,107 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>The 5 Best New Movies</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>The 5 Best New Movies</title>
 
-    <!-- Bootstrap 4 CSS -->
-    <link rel="stylesheet"
-          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Bootstrap 4 CSS -->
+  
 
-    <!-- Font Awesome for YouTube icon -->
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-    <style>
-        body {
-            padding: 20px;
-        }
-        .movie-img {
-            width: 100%;
-            height: auto;
-        }
-        .youtube-link {
-            color: red;
-        }
-        a {
-            font-size: 14px;
-        }
-    </style>
+  <style>
+    .movie-card { margin-bottom: 32px; }
+    .poster {
+      width: 100%; max-width: 220px; border-radius: 4px;
+      display: block; /* so margin auto centers */
+      margin-bottom: 10px;
+    }
+    .links a { display: block; }
+    .youtube-icon { width: 20px; vertical-align: middle; margin-right: 5px; }
+    /* Optional: center content on small screens */
+    .movie-inner { text-align: left; }
+    @media (max-width: 575.98px) {
+      .movie-inner { text-align: left; }
+    }
+  </style>
 </head>
-<body>
+<body class="p-4">
 
-<div class="container">
-    <h2 class="text-center mb-4">The 5 Best New Movies</h2>
-
+  <div class="container">
+    <h2 class="mb-4">The 5 Best New Movies</h2>
     <div class="row">
 
-        <!-- 1. Mickey 17 -->
-        <div class="col-12 col-md-6 col-lg-4 mb-4">
-            <h5>1. Mickey 17</h5>
-            <img src="https://m.media-amazon.com/images/M/MV5BZGQwYmEzMzktYzBmMy00NmVmLTkyYTUtOTYyZjliZDNhZGVkXkEyXkFqcGc@._V1_.jpg" class="movie-img mb-2" alt="Mickey 17 Poster">
-
-            <a href="https://www.imdb.com/title/tt12299608/" target=" target="_blank">https://www.imdb.com/title/tt12299608/" target=</a><br>
-            <a href="https://www.themoviedb.org/search?query=Mickey+17" target="_blank">https://www.themoviedb.org/search?query=Mickey+17</a><br>
-
-            <a href="https://www.youtube.com/results?search_query=Mickey+17+trailer" target="_blank" class="youtube-link">
-                <i class="fab fa-youtube"></i> Mickey 17|Official Trailer
+      <!-- 1) Mickey 17 -->
+      <div class="col-sm-12 col-md-6 col-lg-3 movie-card">
+        <h5>1. Mickey 17</h5>
+        <div class="media">
+          <img class="mr-3 poster" src="https://m.media-amazon.com/images/M/MV5BZGQwYmEzMzktYzBmMy00NmVmLTkyYTUtOTYyZjliZDNhZGVkXkEyXkFqcGc@._V1_.jpg" alt="Mickey 17 poster (placeholder)" />
+          <div class="media-body links">
+            <a href="https://www.imdb.com/title/tt12299608/" target="_blank" rel="noopener">
+             https://www.imdb.com
+            </a><br />
+            <a href="https://en.wikipedia.org/wiki/Mickey_17" target="_blank" rel="noopener">
+              https://en.wikipedia.org
+            </a><br />
+            
+            <a href="https://www.youtube.com/watch?v=osYpGSz_0i4" target="_blank" rel="noopener">
+		<img class="youtube-icon" src="Youtube_logo.png" alt="YouTube icon" />
+              Mickey 17 | Official Trailer (Warner Bros.)
             </a>
+          </div>
         </div>
+      </div>
 
-        <!-- 2. Ad Vitam -->
-        <div class="col-12 col-md-6 col-lg-4 mb-4">
-            <h5>2. Ad Vitam</h5>
-            <img src="https://upload.wikimedia.org/wikipedia/en/f/ff/Ad_Vitam_poster.jpg" class="movie-img mb-2" alt="Ad Vitam">
-
-            <a href="https://www.imdb.com/title/tt8548830/" target=" target="_blank">https://www.imdb.com/title/tt8548830/" target=</a><br>
-            <a href="https://www.themoviedb.org/search?query=Ad+Vitam" target="_blank">https://www.themoviedb.org/search?query=Ad+Vitam</a><br>
-
-            <a href="https://www.youtube.com/results?search_query=Ad+Vitam+trailer" target="_blank" class="youtube-link">
-                <i class="fab fa-youtube"></i> Ad Vitam|Official Trailer
+      <!-- 2) Ad Vitam (2025 Netflix film) -->
+      <div class="col-sm-12 col-md-6 col-lg-3 movie-card">
+        <h5>2. Ad Vitam</h5>
+        <div class="media">
+          <img class="mr-3 poster" src="https://upload.wikimedia.org/wikipedia/en/f/ff/Ad_Vitam_poster.jpg" alt="Ad Vitam (2025) poster (placeholder)" />
+          <div class="media-body links">
+            <a href="https://www.imdb.com/video/vi3231500569/" target="_blank" rel="noopener">
+              https://www.imdb.com
+            </a><br />
+            <a href="https://www.netflix.com/tudum/articles/ad-vitam-release-date-news" target="_blank" rel="noopener">
+              https://www.netflix.com (Netflix Tudum)
+            </a><br />
+            
+            <a href="https://www.youtube.com/watch?v=gMmF9uWqzK8" target="_blank" rel="noopener">
+		<img class="youtube-icon" src="Youtube_logo.png" alt="YouTube icon" />
+              Ad Vitam | Official Trailer (Netflix)
             </a>
+          </div>
         </div>
+      </div>
 
-        <!-- 3. Cleaner -->
-        <div class="col-12 col-md-6 col-lg-4 mb-4">
-            <h5>3. Cleaner</h5>
-            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5f/Cleaner_2025_poster.jpg/250px-Cleaner_2025_poster.jpg" class="movie-img mb-2" alt="Cleaner">
-
-            <a href="https://www.imdb.com/title/tt0896798/" target=" target="_blank">https://www.imdb.com/title/tt0896798/" target=</a><br>
-            <a href="https://www.themoviedb.org/search?query=Cleaner" target="_blank">https://www.themoviedb.org/search?query=Cleaner</a><br>
-
-            <a href="https://www.youtube.com/results?search_query=Cleaner+movie+trailer" target=" target="_blank" class="youtube-link">
-                <i class="fab fa-youtube"></i> Cleaner|Official Trailer
+      <!-- 3) Cleaner (2007) -->
+      <div class="col-sm-12 col-md-6 col-lg-3 movie-card">
+        <h5>3. Cleaner</h5>
+        <div class="media">
+          <img class="mr-3 poster" src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5f/Cleaner_2025_poster.jpg/250px-Cleaner_2025_poster.jpg" alt="Cleaner (2007) poster (placeholder)" />
+          <div class="media-body links">
+            <a href="https://www.imdb.com/title/tt0896798/" target="_blank" rel="noopener">
+              https://www.imdb.com
+            </a><br />
+            <a href="https://en.wikipedia.org/wiki/Cleaner_(2007_film)" target="_blank" rel="noopener">
+              https://en.wikipedia.org
+            </a><br />
+            
+            <a href="https://www.youtube.com/watch?v=fdF699_b2wI" target="_blank" rel="noopener">
+		<img class="youtube-icon" src="Youtube_logo.png" alt="YouTube icon" />
+              Cleaner | Official Trailer
             </a>
+          </div>
         </div>
+      </div>
 
-        <!-- 4. Ash -->
-        <div class="col-12 col-md-6 col-lg-4 mb-4">
-            <h5>4. Ash</h5>
-            <img src="https://m.media-amazon.com/images/M/MV5BOTYwZDE3ZDctOTc2Mi00MWIyLWFmMjctZTJmNzNmMjZkOTI0XkEyXkFqcGc@._V1_.jpg" class="movie-img mb-2" alt="Ash">
-
-            <a href="https://www.imdb.com/video/vi991152409/?playlistId=tt17489650&ref_=tt_ov_ov_vi" target="_blank">https://www.imdb.com/video/vi991152409/?playlistId=tt17489650&ref_=tt_ov_ov_vi</a><br>
-            <a href="https://www.themoviedb.org/search?query=Ash" target="_blank">https://www.themoviedb.org/search?query=Ash</a><br>
-
-            <a href="https://www.youtube.com/results?search_query=Ash+movie+trailer" target="_blank" class="youtube-link">
-                <i class="fab fa-youtube"></i> Ash|Official Trailer
+      <!-- 4) Ash (2025, Flying Lotus) -->
+      <div class="col-sm-12 col-md-6 col-lg-3 movie-card">
+        <h5>4. Ash</h5>
+        <div class="media">
+          <img class="mr-3 poster" src="https://m.media-amazon.com/images/M/MV5BOTYwZDE3ZDctOTc2Mi00MWIyLWFmMjctZTJmNzNmMjZkOTI0XkEyXkFqcGc@._V1_.jpg" alt="Ash (2025) poster (placeholder)" />
+          <div class="media-body links">
+            <a href="https://www.imdb.com/title/tt17489650/" target="_blank" rel="noopener">
+              https://www.imdb.com
+            </a><br />
+            <a href="https://www.youtube.com/watch?v=uvp2EYCXYwU" target="_blank" rel="noopener">
+             https://www.youtube.com(RLJE YouTube listing)
+            </a><br />
+           
+            <a href="https://www.youtube.com/watch?v=z4xFjHIzFzM" target="_blank" rel="noopener">
+		 <img class="youtube-icon" src="Youtube_logo.png" alt="YouTube icon" />
+              Ash | Official Trailer (IGN)
             </a>
+          </div>
         </div>
+      </div>
 
-        <!-- 5. Piglet -->
-        <div class="col-12 col-md-6 col-lg-4 mb-4">
-            <h5>5. Piglet</h5>
-            <img src="https://m.media-amazon.com/images/M/MV5BMmM1MWRkYmEtMDU2YS00NDZiLTk2MDEtZjZmYjEyZGU4YjExXkEyXkFqcGc@._V1_QL75_UY281_CR6,0,190,281_.jpg" class="movie-img mb-2" alt="Piglet">
+      <!-- 5) Piglet (2025) -->
+      <div class="col-sm-12 col-md-6 col-lg-3 movie-card">
+        <h5>5. Piglet</h5>
+        <div class="media">
+          <img class="mr-3 poster" src="https://m.media-amazon.com/images/M/MV5BMmM1MWRkYmEtMDU2YS00NDZiLTk2MDEtZjZmYjEyZGU4YjExXkEyXkFqcGc@._V1_QL75_UY281_CR6,0,190,281_.jpg" alt="Piglet (2025) poster (placeholder)" />
+          <div class="media-body links">
+            <a href="https://www.imdb.com/title/tt33050292/" target="_blank" rel="noopener">
+              https://www.imdb.com 
+            </a><br />
+            <a href="https://www.rottentomatoes.com/m/piglet" target="_blank" rel="noopener">
+              https://www.rottentomatoes.com
+            </a><br />
+	
+	   
+            <a href="https://www.youtube.com/watch?v=5ArvBZ3Nt9E" target="_blank" rel="noopener">
+		<img class="youtube-icon" src="Youtube_logo.png" alt="YouTube icon" />
+              Piglet | Official Trailer 
 
-            <a href="https://www.imdb.com/title/tt33050292/mediaviewer/rm1686202113/?ref_=tt_ov_i" target="_blank">https://www.imdb.com/title/tt33050292/mediaviewer/rm1686202113/?ref_=tt_ov_i</a><br>
-            <a href="https://www.themoviedb.org/search?query=Piglet" target="_blank">https://www.themoviedb.org/search?query=Piglet</a><br>
-
-            <a href="https://www.youtube.com/results?search_query=Piglet+movie+trailer" target="_blank" class="youtube-link">
-                <i class="fab fa-youtube"></i> Piglet|Official Trailer
-            </a>
-        </div>
-
-    </div>
-</div>
-
-</body>
-</html>
